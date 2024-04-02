@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  background: url(images/bobabg2.webp) no-repeat center center/cover;
+  height: 8vh;
+}
+
+header,
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main {
+  min-height: 100vh;
+  transition: filer 0ms ease-in-out 300ms;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  padding-top: 18%;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  margin-top: 3vh;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-img img {
+  width: 250px;
+  height: 250px;
+}
+
+.item-info {
+  margin-right: auto;
+}
+
+.item-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.plus {
+  font-size: 30px;
+  color: #939393;
+  border-radius: 100px;
+  border: 2px solid rgb(171, 171, 171);
+  background: #e7e7e7;
+  height: 70px;
+  width: 70px;
+  padding: 5px;
+}
+
+.plus:hover,
+plus:active {
+  background: #e59da2;
+  cursor: pointer;
+  color: #000;
+}
+
+.divider {
+  width: 70%;
+  height: 1px;
+  background: #c8c8c8;
+  margin: 10px auto;
+}
+
+.cart {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(182, 207, 172);
+  background: linear-gradient(
+    180deg,
+    rgba(182, 207, 172, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+.cart h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.discount {
+  text-align: center;
+}
+
+.cart ul {
+  list-style: none;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 5px 50px 5px 50px;
+}
+
+.remove-item {
+  margin-right: auto;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: rgb(81, 81, 81);
+}
+
+.remove-item:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.divider-total {
+  width: 70%;
+  height: 1px;
+  background: #909090;
+  margin: 10px auto;
+}
+
+.big-button {
+  background: #e58380;
+  border: none;
+  margin: 10px;
+  padding: 20px;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.big-button:hover,
+.big-button:active {
+  background: #ea4b60;
+  cursor: pointer;
+}
+
+.payment {
+  background: #94bd82;
+  background: linear-gradient(
+    0deg,
+    rgb(148, 189, 130) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 10px;
+  width: 700px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 20px #787878;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.payment h3 {
+  text-align: center;
+  padding: 20px;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+}
+
+.thank-you-msg {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Background blur effect and no scroll when payment form is showing */
+
+body.active-payment {
+  overflow: hidden;
+}
+
+body.active-payment .main {
+  filter: blur(5px);
+  background: rgba(0, 0, 0, 0.08);
+  transition: filter 0.5s ease-in-out 0.5s;
+}
+
+body.active-payment .payment {
+  top: 50%;
+  opacity: 1;
+  margin-top: 0;
+}

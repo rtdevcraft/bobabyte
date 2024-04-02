@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BobaByte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="images/logo.png"
+        alt="BobaByte logo- bubble tea is only a couple clicks away"
+      />
+    </header>
+    <main>
+      <section class="menu" id="menu"></section>
+      <section class="cart" id="cart"></section>
+      <section class="payment" id="payment">
+        <button class="close-button" data-close="close">x</button>
+        <h3>Enter Your Information</h3>
+        <form class="payment-form" id="payment-form">
+          <label for="name">Name</label>
+          <input
+            required
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name"
+          />
+          <label for="card-number">Card Number</label>
+          <input
+            required
+            type="text"
+            name="card"
+            id="card"
+            placeholder="Enter Card Number"
+          />
+          <label for="cvv">CVV</label>
+          <input
+            required
+            type="text"
+            name="cvv"
+            id="cvv"
+            placeholder="Enter CVV"
+          />
+          <button class="big-button" data-pay="pay">Place Order</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
