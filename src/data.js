@@ -1,6 +1,6 @@
-import strawberryBoba from './images/strawberry-boba.png'
-import grahamBoba from './images/graham-boba.png'
-import taroBoba from './images/taro-boba.png'
+import strawberryBoba from '../public/images/strawberry-boba.png'
+import grahamBoba from '../public/images/graham-boba.png'
+import taroBoba from '../public/images/taro-boba.png'
 
 export const menuArray = [
   {
