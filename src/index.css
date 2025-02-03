@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
-  background: url(images/bobabg2.webp) no-repeat center center/cover;
+  background: url(../public/images/bobabg2.webp) no-repeat center center/cover;
   height: 8vh;
 }
 
